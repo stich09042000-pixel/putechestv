@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.site-wrapper {
+    background-color: #ffffff;
+    max-width: 1150px;
+    width: 100%;
+    border: 4px solid #e22113;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.site-header {
+    position: relative;
+    background-image: url('images/123.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 15px 15px 0 15px; 
+    border-radius: 8px; /* Добавлено скругление для аккуратности */
+}
+
+.header-content {
+    background-color: rgba(219, 217, 213, 0.637);
+    padding: 15px 400px;
+    border-radius: 4px;
+    color: white;
+}
+
+.site-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.site-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-description {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.main-nav {
+    background-color: #8d8989;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 15px 15px 0 15px; 
+    overflow: hidden;
+    border-radius: 8px; /* Добавлено скругление для аккуратности */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: #000000;
+    background-color: #e1dddd;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid #7a7676;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Эффект при наведении и стиль для активной страницы */
+.main-nav li a:hover,
+.main-nav li a.active {
+    background-color: #e22113;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+    padding: 20px 15px;
+    background-color: #ffffff;
+    align-items: flex-start;
+}
+
+.sidebar-left {
+    flex: 0 0 240px;
+}
+
+.sidebar-right {
+    flex: 0 0 200px;
+}
+
+.main-content {
+    flex: 1;
+    border: 1px solid #525151; 
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.widget {
+    background: #ffffff;
+    border: 1px solid #000000; 
+    border-radius: 12px;       
+    margin-bottom: 15px;
+    padding: 8px;              
+}
+
+.widget h3 {
+    background-color: #e22113; 
+    color: white;
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 8px;        
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.widget h3::before {
+    content: "►";
+    color: #ff9999;            
+    font-size: 9px;
+    margin-right: 8px;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 5px 8px;
+}
+
+.widget li {
+    font-size: 13px;
+    margin: 12px 0;
+    color: #000000;
+    position: relative;
+    padding-left: 15px;        
+    line-height: 1.4;
+}
+
+.widget li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;                  
+    width: 6px;
+    height: 6px;
+    border: 1.5px solid #e22113; 
+    border-radius: 50%;
+    background: transparent;
+}
+
+.widget a {
+    color: #000000;
+    text-decoration: underline; 
+}
+
+.widget a:hover {
+    color: #e22113;
+}
+
+.search-widget {
+    padding: 10px;
+}
+.search-input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.search-button {
+    background-color: #e22113;
+    color: white;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.post-card {
+    background: #ffffff;
+    border: none; /* Убрана внутренняя дублирующая рамка карточки */
+    padding: 20px;
+}
+
+.post-title {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.post-meta {
+    color: #7f8c8d;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.post-meta a, .post-footer-meta a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.post-content {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.post-footer-meta {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-top: 15px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 10px;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #333333;
+    border-top: 1px solid #dcdcdc;
+    padding: 15px 20px;
+    font-size: 12px;
+}
+
+.footer-links {
+    margin-top: 4px;
+    color: #7f8c8d;
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Отрицательный маргин для выравнивания текста слева БЕЗ изменения padding */
+.site-title, 
+.site-description {
+    margin-left: -380px; 
+    text-align: left;   
+    color: #000000;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar-left, .sidebar-right {
+        width: 100%;
+        flex: none;
+    }
+}
+
+/* ==========================================================================
+   ЭКЗОТИЧЕСКАЯ ТЕМА ДЛЯ СТРАНИЦЫ БОРА-БОРА (КЛАСС .bora-theme)
+   ========================================================================== */
+
+/* Меняем общую рамку сайта на благородный синий из вашего примера */
+.bora-theme .site-wrapper {
+    background-color: #A68868;
+    border: 4px solid #4B6382; 
+}
+
+/* Полностью убираем белый цвет. Перекрашиваем фон блоков в песочный #A68868, 
+   а текст — в ваш фирменный светлый оттенок #CDD5DB */
+.bora-theme .container,
+.bora-theme .post-card,
+.bora-theme .widget,
+.bora-theme .main-content,
+.bora-theme .footer {
+    background-color: #A68868 !important;
+    color: #CDD5DB !important;
+    border-color: #4B6382 !important;
+}
+
+/* Делаем заголовки постов ярко-белыми, чтобы они круто читались */
+.bora-theme .post-title {
+    color: #ffffff;
+}
+
+/* Стилизуем виджеты в сайдбаре под новые цвета */
+.bora-theme .widget h3 {
+    background-color: #4B6382; /* Синий фон заголовков виджетов */
+    color: #ffffff;
+}
+
+.bora-theme .widget h3::before {
+    color: #E3C39D; /* Песочная стрелочка перед заголовком */
+}
+
+.bora-theme .widget li::before {
+    border-color: #4B6382; /* Синие круглые маркеры списков */
+}
+
+/* Кастомизация ссылок на основе ваших настроек */
+.bora-theme a {
+    color: #4B6382 !important; /* Цвет ссылок */
+    text-decoration: underline;
+}
+
+.bora-theme a:visited {
+    color: #E3C39D !important; /* Цвет посещенных ссылок */
+}
+
+.bora-theme a:hover {
+    color: #ffffff !important; /* При наведении ссылка подсветится белым */
+}
+
+/* Мета-данные (автор, дата) */
+.bora-theme .post-meta {
+    color: #e1d3c5;
+}
+
+/* Кнопка поиска */
+.bora-theme .search-button {
+    background-color: #4B6382;
+}
+.bora-theme .search-input {
+    border-color: #4B6382;
+    background-color: #e1d3c5;
+    color: #333;
+}
