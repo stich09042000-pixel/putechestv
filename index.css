@@ -275,60 +275,98 @@ body {
 }
 
 
+body.bora-theme {
+    background-color: #1a2536; 
+}
+
 .bora-theme .site-wrapper {
-    background-color: #A68868;
-    border: 4px solid #4B6382; 
+    background-color: #f4edd9; 
+    border: 4px solid #4B6382;
 }
 
-.bora-theme .container,
-.bora-theme .post-card,
-.bora-theme .widget,
-.bora-theme .main-content,
-.bora-theme .footer {
-    background-color: #A68868 !important;
-    color: #CDD5DB !important;
-    border-color: #4B6382 !important;
+.bora-theme .main-nav {
+    background-color: #4B6382; 
 }
 
-.bora-theme .post-title {
+.bora-theme .main-nav li a {
+    background-color: #dfd5c6;
+    color: #333333;
+    border: 1px solid #3b4e66;
+    border-bottom: 0;
+}
+
+.bora-theme .main-nav li a:hover,
+.bora-theme .main-nav li a.active {
+    background-color: #A68868; 
     color: #ffffff;
 }
 
+.bora-theme .container {
+    background-color: #f4edd9;
+}
+
+.bora-theme .main-content {
+    background-color: #ffffff;
+    border: 1px solid #4B6382;
+}
+
+.bora-theme .post-card {
+    background-color: #ffffff;
+}
+
+.bora-theme .post-title {
+    color: #4B6382; 
+}
+
+.bora-theme .post-meta,
+.bora-theme .post-meta a {
+    color: #A68868;
+}
+
+
+.bora-theme .widget {
+    background: #ffffff;
+    border: 1px solid #4B6382;
+}
+
 .bora-theme .widget h3 {
-    background-color: #4B6382; 
+    background-color: #4B6382;
     color: #ffffff;
 }
 
 .bora-theme .widget h3::before {
-    color: #E3C39D; 
+    color: #E3C39D;
 }
 
 .bora-theme .widget li::before {
-    border-color: #4B6382; 
+    border-color: #A68868;
 }
 
-.bora-theme a {
-    color: #4B6382 !important; 
-    text-decoration: underline;
+.bora-theme .widget a {
+    color: #333333;
 }
 
-.bora-theme a:visited {
-    color: #E3C39D !important; 
+.bora-theme .widget a:hover {
+    color: #4B6382;
 }
 
-.bora-theme a:hover {
-    color: #ffffff !important; 
-}
-
-.bora-theme .post-meta {
-    color: #e1d3c5;
-}
 
 .bora-theme .search-button {
     background-color: #4B6382;
 }
+
 .bora-theme .search-input {
-    border-color: #4B6382;
-    background-color: #e1d3c5;
-    color: #333;
+    border: 1px solid #4B6382;
+    background-color: #fcfaf5;
+}
+
+
+.bora-theme .footer {
+    background-color: #dfd5c6;
+    border-top: 1px solid #4B6382;
+    color: #333333;
+}
+
+.bora-theme .footer a {
+    color: #4B6382;
 }
